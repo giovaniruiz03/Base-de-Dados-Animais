@@ -1,6 +1,8 @@
 # Base de Dados Animais
 Tarefa Banco de Dados - Base de Dados Animais
 
+# Etapa 1
+
 # Tópico 1 
 Selecione todos os animais.
 
@@ -56,6 +58,7 @@ Selecione todos os animais que o peso não seja maior que 30, com cor amarelo ou
 
 ![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/54d0be24-c599-4504-828d-69d7576871f7)
 
+# Etapa 2
 
 
 ## Aluno: Giovani Boccardo Ruiz - RA: 223102 - giruiz2003@gmail.com 

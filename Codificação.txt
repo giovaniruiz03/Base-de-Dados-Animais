@@ -67,3 +67,51 @@ SELECT * from tb_animais where peso BETWEEN '13' and '15';
 SELECT * FROM tb_animais WHERE peso <= 30
                            AND (cor = 'amarelo' OR cor = 'roxo')
                            AND nasc > '2012-01-01';
+
+
+
+ETAPA 2 
+
+Tópico 1
+-- |Tabela de Espécies
+CREATE TABLE tb_especies (
+    id_especie INT PRIMARY KEY,
+    nome VARCHAR(80),
+    descricao TEXT
+);
+
+-- Tabela de Animais
+CREATE TABLE tb_animais (
+    id_animal INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(60),
+    data_nasc DATE,
+    peso DECIMAL(10, 2),
+    id_especie INT,
+    FOREIGN KEY (id_especie) REFERENCES tb_especies(id_especie)
+);
+
+-- Inserindo dados na tabela de espécies
+INSERT INTO tb_especies (id_especie, nome, descricao) VALUES
+(1, 'Gato', 'Animal de estimação com pelo macio e garras retráteis.'),
+(2, 'Cachorro', 'Mamífero domesticado conhecido por sua lealdade e companheirismo.'),
+(3, 'Coelho', 'Animal peludo e pequeno com orelhas longas e felpudas.');
+
+
+-- Inserindo dados na tabela de animais
+INSERT INTO tb_animais (nome, data_nasc, peso, id_especie) VALUES
+('Simba', '2010-05-15', 18.00, 1),
+('Nala', '2012-02-28', 16.00, 1),
+('Dumbo', '2008-11-10', 50.00, 2),
+('Babar', '2015-07-20', 4.00, 2),
+('Melman', '2013-04-05', 2.00, 3),
+('Gloria', '2014-09-18', 10.00, 3),
+('Alex', '2011-12-03', 17.00, 3),
+('Zazu', '2016-08-14', 30.00, 1);
+
+SELECT * FROM tb_animais;
+
+SELECT * FROM tb_especies;
+
+
+
+

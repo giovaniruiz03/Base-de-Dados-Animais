@@ -112,6 +112,46 @@ SELECT * FROM tb_animais;
 
 SELECT * FROM tb_especies;
 
+Tópico 2
 
+-- Tabela de marcas
+CREATE TABLE tb_marcas (
+    id_marca INT PRIMARY KEY,
+    nome VARCHAR(100),
+    site_oficial VARCHAR(255),
+    telefone VARCHAR(20)
+);
+
+-- Tabela de produtos
+CREATE TABLE tb_produtos (
+    id_produto INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    preco_custo DECIMAL(10, 2),
+    preco_venda DECIMAL(10, 2),
+    data_validade DATE,
+    id_marca INT,
+    FOREIGN KEY (id_marca) REFERENCES tb_marcas(id_marca)
+);
+
+-- Inserindo dados na tabela de marcas
+INSERT INTO tb_marcas (id_marca, nome, site_oficial, telefone) VALUES
+(1, 'Samsung', 'www.samsung.com', '0800-124-421'),
+(2, 'Apple', 'www.apple.com', '0800-761-0880'),
+(3, 'Sony', 'www.sony.com', '0800-888-6769');
+
+-- Inserindo dados na tabela de produtos
+INSERT INTO tb_produtos (nome, preco_custo, preco_venda, data_validade, id_marca) VALUES
+('Samsung Galaxy S21', 700.00, 999.99, '2024-12-31', 1),
+('iPhone 13', 800.00, 1299.99, '2024-12-31', 2),
+('Sony PlayStation 5', 450.00, 699.99, '2024-12-31', 3),
+('Samsung 4K Smart TV', 600.00, 899.99, '2024-12-31', 1),
+('MacBook Air', 900.00, 1299.99, '2024-12-31', 2),
+('Sony Noise-Canceling Headphones', 150.00, 249.99, '2024-12-31', 3),
+('Samsung Galaxy Watch 4', 250.00, 399.99, '2024-12-31', 1),
+('iPad Pro', 700.00, 999.99, '2024-12-31', 2);
+
+SELECT * FROM tb_marcas;
+
+SELECT * FROM tb_produtos;
 
 

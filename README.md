@@ -68,10 +68,15 @@ Selecione todos os animais que o peso não seja maior que 30, com cor amarelo ou
 
 ![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/a7610926-a65f-43de-9778-66d9f6041930)
 
-# Tópico 2 - Animais e Espécies
+# Tópico 2 - Produtos e Marcas
 
+![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/367f1c2a-cc03-491b-b1f1-72593f3e01b9)
 
+![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/e995946e-6ec6-43ea-829b-b604799a0bda)
 
+![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/c01e576e-4efd-4c04-bc3a-ff475ba696f6)
+
+# Tópico 3 - Produtos e Marcas
 
 ## Aluno: Giovani Boccardo Ruiz - RA: 223102 - giruiz2003@gmail.com 
 

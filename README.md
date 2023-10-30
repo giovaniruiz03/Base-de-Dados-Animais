@@ -76,7 +76,15 @@ Selecione todos os animais que o peso não seja maior que 30, com cor amarelo ou
 
 ![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/c01e576e-4efd-4c04-bc3a-ff475ba696f6)
 
-# Tópico 3 - Produtos e Marcas
+# Tópico 3 - Filmes e Categorias
+
+![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/dd1d6b13-3eca-49fe-bdff-944b527feff3)
+
+![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/e98002fc-a98c-455c-a81c-bb97620c2322)
+
+![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/d5a3c8fc-eb14-4a26-85b0-625b05b8e267)
+
+
 
 ## Aluno: Giovani Boccardo Ruiz - RA: 223102 - giruiz2003@gmail.com 
 

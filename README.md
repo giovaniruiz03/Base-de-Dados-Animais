@@ -62,7 +62,7 @@ Selecione todos os animais que o peso não seja maior que 30, com cor amarelo ou
 
 # Tópico 1 - Animais e Espécies
 
-![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/42494b45-e209-4881-9455-65574fdb1480)
+![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/774f67b7-59a9-47f2-89de-04f51e079366)
 
 ![image](https://github.com/giovaniruiz03/Base-de-Dados-Animais/assets/145368122/856467ac-a0f3-4418-a7c6-8b8d6eece6c0)
 

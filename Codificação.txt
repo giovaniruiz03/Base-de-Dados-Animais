@@ -155,3 +155,43 @@ SELECT * FROM tb_marcas;
 SELECT * FROM tb_produtos;
 
 
+Tópico 3 
+
+-- Tabela de categorias
+CREATE TABLE tb_categorias (
+    id_categoria INT PRIMARY KEY ,
+    nome VARCHAR(100),
+    publico_alvo VARCHAR(50)
+);
+
+-- Tabela de filmes
+CREATE TABLE tb_filmes (
+    id_filme INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(255),
+    sinopse TEXT,
+    estudio VARCHAR(255),
+    id_categoria INT,
+    FOREIGN KEY (id_categoria) REFERENCES tb_categorias(id_categoria)
+);
+
+-- Inserindo dados na tabela de categorias
+INSERT INTO tb_categorias (id_categoria, nome, publico_alvo) VALUES
+(1, 'Ação', 'Adulto'),
+(2, 'Comédia', 'Família'),
+(3, 'Drama', 'Adulto');
+
+-- Inserindo dados na tabela de filmes
+INSERT INTO tb_filmes (titulo, sinopse, estudio, id_categoria) VALUES
+('Vingadores: Ultimato', 'Os Vingadores tentam reverter as ações de Thanos e restaurar o equilíbrio no universo.', 'Marvel Studios', 1),
+('Toy Story 4', 'Woody e Buzz Lightyear embarcam em uma nova aventura com seus amigos brinquedos.', 'Pixar Animation Studios', 2),
+('Coringa', 'A história do icônico vilão de Gotham City, explorando suas origens e transformação em Coringa.', 'Warner Bros. Pictures', 3),
+('Parasita', 'Uma família pobre elabora um plano para trabalhar para uma família rica.', 'CJ Entertainment', 3),
+('Pantera Negra', 'O príncipe TChalla retorna a Wakanda para assumir o trono após a morte de seu pai.', 'Marvel Studios', 1),
+('Forrest Gump', 'A história da vida de Forrest Gump, um homem com baixo QI mas habilidades incríveis.', 'Paramount Pictures', 3),
+('Pulp Fiction', 'Histórias interligadas de criminosos, gângsteres e outros personagens bizarros.', 'Miramax Films', 2),
+('La La Land', 'Um músico e uma atriz se encontram e se apaixonam enquanto buscam seus sonhos em Los Angeles.', 'Summit Entertainment', 2);
+
+SELECT * FROM tb_categorias;
+
+SELECT * FROM tb_filmes;
+
